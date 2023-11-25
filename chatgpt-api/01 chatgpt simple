@@ -1,6 +1,7 @@
+pip install openai
 import openai
 
-openai.api_key = "####"
+openai.api_key = "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"
 
-completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Give me 3 ideas for apps I could build with openai apis "}])
+completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Write an essay about Tigers"}])
 print(completion.choices[0].message.content)
